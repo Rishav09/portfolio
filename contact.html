@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Rishav Sapahia</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/b2a9087594.js" crossorigin="anonymous"></script>
+
+  <!-- (Optional) Google Font: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" 
+    rel="stylesheet"
+  />
+  
+  <style>
+    body {
+      font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Sidebar with background image -->
+    <aside class="relative w-full md:w-[540px] border-r border-gray-200 h-auto md:h-screen">
+      <!-- 1) Background image -->
+      <div 
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('/Users/swastik/personal_portfolio/img/linkedin.jpg');"
+      ></div>
+
+      <!-- 2) Dark overlay -->
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-30"></div>
+
+      <!-- 3) Sidebar content -->
+      <div class="relative z-10 p-6 text-white flex flex-col h-full">
+
+        <!-- Name / Title -->
+        <h1 class="text-2xl font-semibold mb-1">Rishav Sapahia</h1>
+        <p class="text-sm text-gray-100 mb-8">
+          Engineer &amp; Machine<br/>
+          Learning Researcher
+        </p>
+
+        <!-- Primary Navigation + Resume -->
+        <nav class="space-y-2">
+          <a href="index.html" class="block hover:text-blue-300">About Me</a>
+          <a href="projects.html" class="block hover:text-blue-300">Projects</a>
+          <a href="contact.html" class="block hover:text-blue-300">Contact</a>
+          <a 
+            href="/Users/swastik/personal_portfolio/files/Rishav_Sapahia.pdf"
+            download
+            class="block hover:text-blue-300"
+          >
+            Download<br> Resume
+          </a>
+        </nav>
+
+        <!-- Social Links at the bottom -->
+        <div class="mt-auto">
+          <h3 class="text-lg font-semibold mb-3">Connect With Me</h3>
+          <div class="flex flex-wrap items-center space-x-4">
+            <!-- LinkedIn -->
+            <a 
+              href="https://www.linkedin.com/in/rishavsapahia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center hover:text-blue-300"
+            >
+              <i class="fab fa-linkedin fa-lg mr-2"></i>
+              <span>LinkedIn</span>
+            </a>
+            <!-- GitHub -->
+            <a 
+              href="https://github.com/Rishav09"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center hover:text-blue-300"
+            >
+              <i class="fab fa-github fa-lg mr-2"></i>
+              <span>GitHub</span>
+            </a>
+            <!-- Substack -->
+            <a 
+              href="https://substack.com/@rishavsapahia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center hover:text-blue-300"
+            >
+              <i class="far fa-file-alt fa-lg mr-2"></i>
+              <span>Substack</span>
+            </a>
+            <!-- Medium -->
+            <a 
+              href="https://medium.com/@rishavsapahia"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center hover:text-blue-300"
+            >
+              <i class="fab fa-medium fa-lg mr-2"></i>
+              <span>Medium</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content: Simple Email Message -->
+    <main class="flex-1 p-6 md:p-10 bg-white">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Have a low bar to reaching out to me directly!
+        </p>
+        
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Email me at 
+          <!-- Inline JS to obfuscate email -->
+          <script>
+            // Break up your email into parts:
+            const user = "rishavsapahia";  // e.g., "rishav_sapahia"
+            const domain = "gmail.com";       // e.g., "gmail.com"
+        
+            // Dynamically write the link
+            document.write(
+              "<a href=\"mailto:" + user + "@" + domain + "\""
+              + " class=\"text-blue-600 hover:text-blue-700\""
+              + ">"
+              + user + "@" + domain
+              + "</a>"
+            );
+          </script>
+          and I’ll get back to you as soon as possible.
+        </p>
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>
