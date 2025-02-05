@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rishav Sapahia</title>
-
+  
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Your Font Awesome Kit -->
+  
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/b2a9087594.js" crossorigin="anonymous"></script>
-
-  <!-- (Optional) Google Font: Montserrat -->
+  
+  <!-- Google Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link 
@@ -26,119 +26,111 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50 text-gray-800">
   <!-- Outer container: Sidebar + Main Content -->
   <div class="flex flex-col md:flex-row min-h-screen">
-
+    
     <!-- Sidebar with background image -->
     <aside class="relative w-full md:w-[540px] border-r border-gray-200 h-auto md:h-screen">
-      <!-- 1) Background image itself -->
+      <!-- Background image with a subtle scale transition on hover -->
       <div 
-        class="absolute inset-0 bg-cover bg-center" 
+        class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" 
         style="background-image: url('img/linkedin.jpg');"
       ></div>
-
-      <!-- 2) Dark overlay (for readability) -->
-      <div class="absolute inset-0 bg-gray-900 bg-opacity-30"></div>
-
-      <!-- 3) Actual sidebar content on top -->
-      <div class="relative z-10 p-6 text-white flex flex-col h-full">
-        
+      
+      <!-- Dark overlay for readability -->
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-40"></div>
+      
+      <!-- Sidebar content -->
+      <div class="relative z-10 p-8 flex flex-col h-full">
         <!-- Name / Title -->
-        <h1 class="text-2xl font-semibold mb-1">Rishav Sapahia</h1>
-        <p class="text-sm text-gray-100 mb-8">
-          Engineer &amp; Machine<br/>
-          Learning Researcher
-        </p>
-
-        <!-- Primary Navigation (and Resume link as a normal nav item) -->
-        <nav class="space-y-2">
-          <a href="index.html" class="block hover:text-blue-300">About Me</a>
-          <a href="projects.html" class="block hover:text-blue-300">Projects</a>
-          <a href="contact.html" class="block hover:text-blue-300">Contact</a>
-          <!-- Resume link with same styling -->
+        <header class="mb-8">
+          <h1 class="text-3xl font-bold mb-2">Rishav Sapahia</h1>
+          <p class="text-base text-gray-200">
+            Engineer &amp; Machine Learning Researcher
+          </p>
+        </header>
+        
+        <!-- Primary Navigation -->
+        <nav class="space-y-4">
+          <a href="index.html" class="block text-lg font-medium hover:text-blue-400 transition-colors duration-300">About Me</a>
+          <a href="projects.html" class="block text-lg font-medium hover:text-blue-400 transition-colors duration-300">Projects</a>
+          <a href="contact.html" class="block text-lg font-medium hover:text-blue-400 transition-colors duration-300">Contact</a>
+          <!-- Resume link -->
           <a 
             href="files/Rishav_Sapahia.pdf"
             download
-            class="block hover:text-blue-300"
+            class="block text-lg font-medium hover:text-blue-400 transition-colors duration-300"
           >
-            Download <br>
-            Resume
+            Download Resume
           </a>
         </nav>
-
-        <!-- Flex "push" everything below to the bottom by making this container mt-auto -->
+        
+        <!-- Connect With Me Section -->
         <div class="mt-auto">
-          <!-- Connect With Me Section -->
-          <h3 class="text-lg font-semibold mb-3">Connect With Me</h3>
-
-          <!-- Horizontal row of icons -->
-          <div class="flex flex-wrap items-center space-x-4">
+          <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+          <div class="flex items-center space-x-6">
             <!-- LinkedIn -->
             <a 
               href="https://www.linkedin.com/in/rishavsapahia" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="flex items-center hover:text-blue-300"
+              class="flex items-center text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
-              <i class="fab fa-linkedin fa-lg mr-2"></i>
+              <i class="fab fa-linkedin fa-xl mr-2"></i>
               <span>LinkedIn</span>
             </a>
-
             <!-- GitHub -->
             <a 
               href="https://github.com/Rishav09" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="flex items-center hover:text-blue-300"
+              class="flex items-center text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
-              <i class="fab fa-github fa-lg mr-2"></i>
+              <i class="fab fa-github fa-xl mr-2"></i>
               <span>GitHub</span>
             </a>
-
             <!-- Substack -->
             <a 
               href="https://substack.com/@rishavsapahia" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="flex items-center hover:text-blue-300"
+              class="flex items-center text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
-              <i class="far fa-file-alt fa-lg mr-2"></i>
+              <i class="far fa-file-alt fa-xl mr-2"></i>
               <span>Substack</span>
             </a>
-
             <!-- Medium -->
             <a 
               href="https://medium.com/@rishavsapahia" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="flex items-center hover:text-blue-300"
+              class="flex items-center text-gray-200 hover:text-blue-400 transition-colors duration-300"
             >
-              <i class="fab fa-medium fa-lg mr-2"></i>
+              <i class="fab fa-medium fa-xl mr-2"></i>
               <span>Medium</span>
             </a>
           </div>
         </div>
       </div>
     </aside>
-
+    
     <!-- Main Content -->
-    <main class="flex-1 p-6 md:p-10 bg-white">
+    <main class="flex-1 p-8 md:p-12">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold mb-6">Hello, I’m Rishav!</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I was born in the foothills of the Himalayas and spent most of my life there. 
-          Later, I moved to the sunny beaches of Miami to work in a research lab at Bascom Palmer, 
-          focusing on diagnosing Alzheimer's disease.<br>
-          I’m a Machine Learning Engineer, Researcher, and Problem Solver who thrives on working on impactful projects 
-          with great teams.<br>
-           In my free time, I like to play tennis, started running long distance & 
-          lift weights. This year I really want to get my scuba licence.
+        <h2 class="text-5xl font-extrabold mb-6">Hello, I’m Rishav!</h2>
+        <p class="text-xl text-gray-700 leading-relaxed mb-6">
+          I was born in the foothills of the Himalayas and spent most of my life there. Later, I moved to the sunny beaches of Miami to work in a research lab at Bascom Palmer, focusing on diagnosing Alzheimer's disease. I’m a Machine Learning Engineer, Researcher, and Problem Solver who thrives on working on impactful projects with great teams.
         </p>
-        <p class="text-lg text-gray-700 leading-relaxed">
+        <p class="text-xl text-gray-700 leading-relaxed mb-6">
+          In my free time, I like to play tennis, run long distances, and lift weights. This year, I really want to get my scuba licence.
+        </p>
+        <p class="text-xl text-gray-700 leading-relaxed">
           Drop me a message if you think I can add value to your work or project.
         </p>
-        p.s - This entire website has been made by just prompting different LLMs in 3 hours.
+        <p class="mt-4 italic text-gray-600">
+          p.s. – This entire website has been made by just prompting different LLMs in 3 hours.
+        </p>
       </div>
     </main>
   </div>
