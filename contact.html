@@ -30,7 +30,7 @@
   <div class="flex flex-col md:flex-row min-h-screen">
 
     <!-- Sidebar with background image -->
-    <aside class="relative w-full md:w-[540px] border-r border-gray-200 h-auto md:h-screen">
+    <aside class="relative w-full md:w-[540px] border-r border-gray-200 h-auto md:h-screen overflow-hidden md:sticky md:top-0">
       <!-- Background image with hover scale transition -->
       <div 
         class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
@@ -66,9 +66,9 @@
         </nav>
 
         <!-- Social Links at the bottom -->
-        <div class="mt-auto">
+        <div class="mt-8 md:mt-auto">
           <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
-          <div class="flex items-center space-x-6">
+          <div class="flex flex-wrap items-center gap-3">
             <!-- LinkedIn -->
             <a 
               href="https://www.linkedin.com/in/rishavsapahia"
@@ -117,7 +117,7 @@
     <!-- Main Content: Contact Message -->
     <main class="flex-1 p-8 md:p-12">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-5xl font-extrabold mb-6">Contact Me</h2>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Contact Me</h2>
         <p class="text-xl text-gray-700 leading-relaxed mb-6">
           Have a low bar to reaching out to me directly!
         </p>
